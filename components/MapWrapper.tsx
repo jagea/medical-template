@@ -2,8 +2,8 @@
 
 import dynamic from "next/dynamic";
 
-const Map = dynamic(() => import("@/components/Map"), { ssr: false });
+const Locations = dynamic(() => import("@/components/Locations"), { ssr: false });
 
 export default function MapWrapper() {
-  return <Map />;
+  return <Locations />;
 }

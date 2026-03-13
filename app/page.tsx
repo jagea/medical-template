@@ -1,19 +1,31 @@
+import AnnouncementBar from "@/components/AnnouncementBar";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
+import TrustBar from "@/components/TrustBar";
 import Services from "@/components/Services";
-import Team from "@/components/Team";
+import WhyChooseUs from "@/components/WhyChooseUs";
+import Providers from "@/components/Providers";
+import Reviews from "@/components/Reviews";
+import NewPatients from "@/components/NewPatients";
 import MapWrapper from "@/components/MapWrapper";
-import Contact from "@/components/Contact";
+import FinalCTA from "@/components/FinalCTA";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <main>
+    <>
+      <AnnouncementBar />
       <Navbar />
       <Hero />
+      <TrustBar />
       <Services />
-      <Team />
+      <WhyChooseUs />
+      <Providers />
+      <Reviews />
+      <NewPatients />
       <MapWrapper />
-      <Contact />
-    </main>
+      <FinalCTA />
+      <Footer />
+    </>
   );
 }
